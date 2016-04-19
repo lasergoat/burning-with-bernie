@@ -1,15 +1,23 @@
+# Feel the Bern
+Do you want to look Bernie? Do your friends laugh at your weak trumpish body? Then you should **FEEL THE BERN** Bernie style. The Bernie workout will get you ripped, will shed fat off your weak body, and most importantly will make you feel important.
 
-#GoatStarted
+## Building
+Bernie only uses the best and the best requires NPM and its sick installing powers.
 
-A simple boilerplate for React app with api running mongo.
+```
+npm install
+```
 
-Make sure mongo is installed and the data file is writable - or if you don't want mongo, remove the commands from `package.json`.
+## Running
+Burn off those calories with some NPM run.
 
-There are a few commands to run,
+```
+npm start
+```
 
-    npm install
+## Release Your New Look
+Show the world that hot Bernie body by showing off that sexy release.
 
-    npm start
-
-    #or for putting the public files on a specific port:
-    PORT=5477 npm start
+```
+npm run build:release 
+```
