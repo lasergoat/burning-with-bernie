@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class Sex extends React.Component {
 
   render() {
-    if (this.props.page !== 'sex') {
+    if (this.props.options.page !== 'sex') {
       return null;
     }
 

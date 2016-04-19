@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class Level extends React.Component {
 
   render() {
-    if (this.props.page !== 'level') {
+    if (this.props.options.page !== 'level') {
       return null;
     }
 

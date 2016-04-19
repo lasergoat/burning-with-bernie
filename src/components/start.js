@@ -3,14 +3,16 @@ import React from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { connect } from 'react-redux';
 
-const responseFacebook = (response) => {
-  console.log(response);
-}
-
 class Start extends React.Component {
 
+  loginCallback(auth) {
+    console.log(auth);
+    this.props.dispatch({type:'SET_AUTH', auth})
+    this.props.dispatch({type:'PAGE', page: 'sex'})
+  }
+
   render() {
-    if (this.props.page !== 'start') {
+    if (this.props.options.page !== 'start') {
       return null;
     }
 
@@ -28,7 +30,7 @@ class Start extends React.Component {
           appId="1684830645100688"
           autoLoad={true}
           className="ui-button"
-          callback={responseFacebook} />
+          callback={loginCallback.bind(this)} />
       </div>
 
     );

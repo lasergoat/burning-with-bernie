@@ -14,10 +14,6 @@ import Level from './components/level';
 import Workout from './components/workout';
 import Finish from './components/finish';
 
-const responseFacebook = (response) => {
-  console.log(response);
-}
-
 class App extends React.Component {
   render() {
     return (

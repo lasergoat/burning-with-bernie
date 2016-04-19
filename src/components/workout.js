@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class Workout extends React.Component {
 
   render() {
-    if (this.props.page !== 'workout') {
+    if (this.props.options.page !== 'workout') {
       return null;
     }
 

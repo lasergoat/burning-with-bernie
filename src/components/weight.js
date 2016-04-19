@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class Weight extends React.Component {
 
   render() {
-    if (this.props.page !== 'weight') {
+    if (this.props.options.page !== 'weight') {
       return null;
     }
 
