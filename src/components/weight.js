@@ -1,18 +1,30 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
+import { page } from '../actions/page-actions';
+import { actions } from 'react-redux-form';
 
 class Weight extends React.Component {
 
+  selectWeight(weight) {
+    let dispatch = this.props.dispatch;
+    dispatch(actions.change('options.weight', weight))
+    dispatch(page('level'))
+  }
+
   render() {
-    if (this.props.options.page !== 'weight') {
+    if (this.props.page !== 'weight') {
       return null;
     }
 
     return (
 
       <div>
-        Weight
+        <h2>Weight</h2>
+
+        <button onClick={(e) => this.selectWeight(100)}>100</button>
+        <button onClick={(e) => this.selectWeight(150)}>150</button>
+        <button onClick={(e) => this.selectWeight(200)}>200</button>
       </div>
 
     );

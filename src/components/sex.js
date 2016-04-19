@@ -1,18 +1,22 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
+import { page } from '../actions/page-actions';
 
 class Sex extends React.Component {
 
   render() {
-    if (this.props.options.page !== 'sex') {
+    if (this.props.page !== 'sex') {
       return null;
     }
+
+    let dispatch = this.props.dispatch;
 
     return (
 
       <div>
-        Sex
+        <button onClick={(e) => dispatch(page('weight'))}>MALE</button>
+        <button onClick={(e) => dispatch(page('weight'))}>FEMALE</button>
       </div>
 
     );
