@@ -23,7 +23,7 @@ class Start extends React.Component {
 
       <div>
         <section className="layout-content">
-          <img src="image/bernie.png" alt="" width="200" height="200" />
+          <img src="src/images/landing_logo.png" />
           <h1 className="ui-heading">
             Workout With Bernie
           </h1>

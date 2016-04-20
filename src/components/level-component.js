@@ -22,9 +22,9 @@ class Level extends React.Component {
       <div>
         <h2>Level</h2>
 
-        <button onClick={(e) => this.selectLevel(100)}>Easy</button>
-        <button onClick={(e) => this.selectLevel(150)}>Moderate</button>
-        <button onClick={(e) => this.selectLevel(200)}>Extreme</button>
+        <button onClick={(e) => this.selectLevel(1)}>Easy</button>
+        <button onClick={(e) => this.selectLevel(2)}>Moderate</button>
+        <button onClick={(e) => this.selectLevel(3)}>Extreme</button>
       </div>
 
     );
