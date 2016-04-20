@@ -12,7 +12,9 @@ class Crunches extends React.Component {
     return (
 
       <div class="ui-workout ui-crunches">
-        Crunches
+        <h3>Crunches</h3>
+        <img className="ui-workout-crunch" src="src/images/workout_activity_crunch.png" />
+
       </div>
 
     );

@@ -12,7 +12,8 @@ class PushUps extends React.Component {
     return (
 
       <div class="ui-workout ui-pushups">
-        PushUps
+        <h3>PushUps</h3>
+        <img className="ui-workout-pushup" src="src/images/workout_activity_push_up.png" />
       </div>
 
     );

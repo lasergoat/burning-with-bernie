@@ -12,7 +12,8 @@ class Plank extends React.Component {
     return (
 
       <div class="ui-workout ui-planks">
-        Plank
+        <h3>Planks</h3>
+        <img className="ui-workout-plank" src="src/images/workout_activity_plank.png" />
       </div>
 
     );

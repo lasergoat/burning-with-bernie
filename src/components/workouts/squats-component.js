@@ -12,7 +12,8 @@ class Squats extends React.Component {
     return (
 
       <div class="ui-workout ui-squats">
-        Squats
+        <h3>Squats!</h3>
+        <img className="ui-workout-squat" src="src/images/workout_activity_squat.png" />
       </div>
 
     );
