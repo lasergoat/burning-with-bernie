@@ -1,9 +1,9 @@
 
 rm -rf dist/
 
-mkdir -p dist/image
+mkdir -p dist/images
 
-cp -r image/ dist/image
+cp -r src/images/ dist/images
 
 npm run build
 

@@ -10,5 +10,6 @@ const testAuth = {
 export default {
   auth: modelReducer('auth', {}),
   options: modelReducer('options', {}),
-  page: modelReducer('page', 'start'),
+  page: modelReducer('page', 'workout'),
+  workout: modelReducer('workout', 'plank'),
 }

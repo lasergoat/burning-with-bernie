@@ -15,6 +15,7 @@ class Sex extends React.Component {
     return (
 
       <div>
+        <h2>Your Sex</h2>
         <button onClick={(e) => dispatch(page('weight'))}>MALE</button>
         <button onClick={(e) => dispatch(page('weight'))}>FEMALE</button>
       </div>

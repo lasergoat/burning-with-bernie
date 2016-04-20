@@ -14,7 +14,7 @@ class Workout extends React.Component {
 
     return (
 
-      <div>adfasdf
+      <div>
         <PushUps />
         <Plank />
       </div>

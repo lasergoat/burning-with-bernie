@@ -7,12 +7,12 @@ import './styles/main.scss';
 
 import store from './store';
 
-import Start from './components/start';
-import Sex from './components/sex';
-import Weight from './components/weight';
-import Level from './components/level';
-import Workout from './components/workout';
-import Finish from './components/finish';
+import Start from './components/start-component';
+import Sex from './components/sex-component';
+import Weight from './components/weight-component';
+import Level from './components/level-component';
+import Workout from './components/workout-component';
+import Finish from './components/finish-component';
 
 class App extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class App extends React.Component {
           <Sex />
           <Weight />
           <Level />
-          <Workout />
+          {this.props.page === 'workout' ? <Workout /> : null}
           <Finish />
 
           <footer className="layout-footer">
