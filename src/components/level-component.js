@@ -19,8 +19,8 @@ class Level extends React.Component {
 
     return (
 
-      <div>
-        <p>Please choose your workout level.</p>
+      <div className="ui-options">
+        <p className="ui-description">Please choose your workout level.</p>
         <img src="src/images/welcome_weight_range_logo.png" />
         <section>
           <p>What weight range do you fall under?</p>
