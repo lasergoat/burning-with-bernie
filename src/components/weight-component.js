@@ -19,11 +19,13 @@ class Weight extends React.Component {
 
     return (
 
-      <div>
-        <h2>Weight</h2>
-        <img src="src/images/welcome_weight_range_logo.png" />
+      <div className="ui-options">
+
+        <img className="ui-lead" src="src/images/welcome_weight_range_logo.png" />
         <section>
-          <p>What weight range do you fall under?</p>
+          <p className="ui-description">
+            What weight range do you fall under?
+          </p>
           <img src="src/images/welcome_weight_light.png" 
             onClick={(e) => this.selectWeight(1)} />
           <img src="src/images/welcome_weight_medium.png"
