@@ -1,4 +1,6 @@
-View the Bern live https://bernie.firebaseapp.com/
+View the Bern live https://bernie.firebaseapp.com/  
+
+Check our slides: https://goo.gl/UgGrsy  
 
 # Feel the Bern
 Do you want to look Bernie? Do you want bigger hands? Do your friends laugh at your weak trumpish body? Then you should **FEEL THE BERN** Bernie style. The Bernie workout will get you ripped, will shed fat off your weak body, and most importantly will make you feel important.
