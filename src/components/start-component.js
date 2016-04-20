@@ -23,7 +23,7 @@ class Start extends React.Component {
 
       <div>
         <section className="layout-content">
-          <img src="src/images/landing_logo.png" />
+          <img className="logo" src="src/images/landing_logo.png" />
         </section>
         <section className="layout-content">
           <form>
@@ -32,12 +32,11 @@ class Start extends React.Component {
             <input type="password" name="password" value="Password"/>
           </form>
           <div><a href="#forgot-password">Forgot Password?</a></div>
-          <div>
+          <div className="login-buttons">
             <a href="#"onClick={(e) => dispatch(page('sex'))}><img src="src/images/landing_sign_up.png"/></a>
             <a href="#" onClick={(e) => dispatch(page('sex'))}><img src="src/images/landing_login.png"/></a>
           </div>
         </section>
-        <button onClick={(e) => dispatch(page('sex'))}>SKIP!</button>
         <FacebookLogin
           appId="1684830645100688"
           autoLoad={true}

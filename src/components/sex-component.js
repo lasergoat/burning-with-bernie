@@ -21,10 +21,11 @@ class Sex extends React.Component {
 
     return (
 
-      <div>
-        <h2>Welcom to Feel the Bern!</h2>
+      <div className="ui-options">
         <section class="weight-get-started">
-          <p>Let's get started.</p>
+          <p className="ui-description">
+            Let's get started.
+          </p>
         </section>
         <section class="weight-male-female">
           <p>Are you male or female?</p>
