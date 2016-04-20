@@ -24,12 +24,18 @@ class Start extends React.Component {
       <div>
         <section className="layout-content">
           <img src="src/images/landing_logo.png" />
-          <h1 className="ui-heading">
-            Workout With Bernie
-          </h1>
         </section>
         <section className="layout-content">
-          <p>Are you ready to get sweaty!?</p>
+          <form>
+            <input type="text" name="username" value="Username"/>
+            <p/>
+            <input type="password" name="password" value="Password"/>
+          </form>
+          <div><a href="#forgot-password">Forgot Password?</a></div>
+          <div>
+            <a href="#"onClick={(e) => dispatch(page('sex'))}><img src="src/images/landing_sign_up.png"/></a>
+            <a href="#" onClick={(e) => dispatch(page('sex'))}><img src="src/images/landing_login.png"/></a>
+          </div>
         </section>
         <button onClick={(e) => dispatch(page('sex'))}>SKIP!</button>
         <FacebookLogin
