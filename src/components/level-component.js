@@ -20,11 +20,17 @@ class Level extends React.Component {
     return (
 
       <div>
-        <h2>Level</h2>
-
-        <button onClick={(e) => this.selectLevel(1)}>Easy</button>
-        <button onClick={(e) => this.selectLevel(2)}>Moderate</button>
-        <button onClick={(e) => this.selectLevel(3)}>Extreme</button>
+        <p>Please choose your workout level.</p>
+        <img src="src/images/welcome_weight_range_logo.png" />
+        <section>
+          <p>What weight range do you fall under?</p>
+          <img src="src/images/welcome_workout_easy.png" 
+            onClick={(e) => this.selectLevel(1)} />
+          <img src="src/images/welcome_workout_moderate.png"
+            onClick={(e) => this.selectLevel(2)} />
+          <img src="src/images/welcome_workout_extreme.png" 
+            onClick={(e) => this.selectLevel(3)} />
+        </section>
       </div>
 
     );
