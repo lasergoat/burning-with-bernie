@@ -20,10 +20,12 @@ class Level extends React.Component {
     return (
 
       <div className="ui-options">
-        <p className="ui-description">Please choose your workout level.</p>
-        <img src="src/images/welcome_weight_range_logo.png" />
+
+        <img className="ui-lead" src="src/images/welcome_weight_range_logo.png" />
         <section>
-          <p>What weight range do you fall under?</p>
+          <p className="ui-description">
+            Please choose your workout level.
+          </p>
           <img src="src/images/welcome_workout_easy.png" 
             onClick={(e) => this.selectLevel(1)} />
           <img src="src/images/welcome_workout_moderate.png"

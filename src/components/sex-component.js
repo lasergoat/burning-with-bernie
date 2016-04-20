@@ -27,11 +27,11 @@ class Sex extends React.Component {
             Let's get started.
           </p>
         </section>
-        <section class="weight-male-female">
-          <p>Are you male or female?</p>
-          <img src="src/images/welcome_gender_male.png"  
+        <section className="sex-options">
+          <p className="ui-sub">Are you male or female?</p>
+          <img className="male" src="src/images/welcome_gender_male.png"  
             onClick={(e) => this.selectSex(1)} />
-          <img src="src/images/welcome_gender_female.png" 
+          <img className="female" src="src/images/welcome_gender_female.png" 
             onClick={(e) => this.selectSex(2)} />
         </section>
       </div>

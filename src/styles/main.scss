@@ -47,11 +47,26 @@ h2 {
 
 .ui-options {
   section {    
+    .ui-sub {
+      text-align: center;
+      font-size: 1.5rem;
+    }
     img {
       margin-left: 10%;
       max-width: 75%;
       margin-bottom: 7px;
     }
+    &.sex-options {
+      img {
+        margin:0;
+        max-width: 50%;
+
+        &.male {
+          
+        }
+      }
+    }
+
   }
 
 }
