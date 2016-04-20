@@ -30,17 +30,20 @@ class Start extends React.Component {
             <p/>
             <input type="password" name="password" placeholder="Password"/>
           </form>
-          <div><a href="#forgot-password">Forgot Password?</a></div>
+          <div className="ui-forgot"><a href="#forgot-password">Forgot Password?</a></div>
           <div className="login-buttons">
             <a href="#"onClick={(e) => dispatch(page('sex'))}><img src="src/images/landing_sign_up.png"/></a>
             <a href="#" onClick={(e) => dispatch(page('sex'))}><img src="src/images/landing_login.png"/></a>
           </div>
+          <div className="ui-fb">
+            <FacebookLogin
+              appId="1684830645100688"
+              autoLoad={true}
+              className="ui-button"
+              callback={(r) => this.loginCallback(r)} />
+          </div>
         </section>
-        <FacebookLogin
-          appId="1684830645100688"
-          autoLoad={true}
-          className="ui-button"
-          callback={(r) => this.loginCallback(r)} />
+        
       </div>
 
     );
