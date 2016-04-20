@@ -298,7 +298,20 @@ h2 {
 
 }
 
+.login-buttons {
+    text-align: center;
+}
+
+.login-buttons a {
+    margin: .2rem;;
+}
+
 input {
+    margin-top: 1rem;
     font-size: 1.5rem;
     width: 100%;
+}
+
+a, img, button {
+    margin-top: 1rem;
 }
