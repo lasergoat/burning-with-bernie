@@ -20,7 +20,29 @@ class Workout extends React.Component {
   }
 
   loop() {
-    this.props.dispatch(incrementTime(this.props.time))
+    let time = this.props.time
+    console.log(this.props)
+    let dispatch = this.props.dispatch
+    let level = this.props.options.level
+
+    dispatch(incrementTime(time))
+
+console.log('' + level + time);
+    switch('' + level + time) {
+      case 'easy':
+
+        break;
+      case 2:
+
+        break;
+      case 3:
+
+        break;
+
+    }
+    if (time === 60) {
+
+    }
   }
 
   render() {
@@ -33,7 +55,10 @@ class Workout extends React.Component {
     return (
 
       <div>
-        {this.props.time}
+        <div className="ui-timer">
+          {this.props.time}
+        </div>
+
         <PushUps />
         <Plank />
       </div>
