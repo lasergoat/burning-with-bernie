@@ -21,7 +21,7 @@ class Weight extends React.Component {
 
       <div>
         <h2>Weight</h2>
-
+        <img src="src/images/welcome_weight_range_logo.png" />
         <section>
           <p>What weight range do you fall under?</p>
           <img src="src/images/welcome_weight_light.png" 
