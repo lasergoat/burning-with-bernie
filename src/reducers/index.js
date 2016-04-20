@@ -16,7 +16,7 @@ const defaultOptions = {
 export default {
   auth: modelReducer('auth', {}),
   options: modelReducer('options', defaultOptions),
-  page: modelReducer('page', 'start'),
+  page: modelReducer('page', 'workout'),
   time: modelReducer('time', 0),
   workout: modelReducer('workout', 'plank'),
 }

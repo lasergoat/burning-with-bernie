@@ -11,7 +11,7 @@ class PushUps extends React.Component {
 
     return (
 
-      <div>
+      <div class="ui-workout ui-pushups">
         PushUps
       </div>
 

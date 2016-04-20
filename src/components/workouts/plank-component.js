@@ -11,7 +11,7 @@ class Plank extends React.Component {
 
     return (
 
-      <div>
+      <div class="ui-workout ui-planks">
         Plank
       </div>
 

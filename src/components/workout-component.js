@@ -3,7 +3,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PushUps from './workouts/pushups-component';
 import Plank from './workouts/plank-component';
+import Crunches from './workouts/crunches-component';
+import Squats from './workouts/squats-component';
 import {incrementTime} from '../actions/timer-actions';
+import { actions } from 'react-redux-form';
+import { page } from '../actions/page-actions';
 
 class Workout extends React.Component {
 
@@ -19,29 +23,61 @@ class Workout extends React.Component {
     this.timer = setInterval(this.loop.bind(this), 1000);
   }
 
+  finish() {
+    let dispatch = this.props.dispatch;
+
+    dispatch(actions.change('workout', 'plank'))
+    this.stopTimer()
+    dispatch(page('finish'))
+
+  }
+
   loop() {
     let time = this.props.time
-    console.log(this.props)
     let dispatch = this.props.dispatch
     let level = this.props.options.level
 
     dispatch(incrementTime(time))
 
-console.log('' + level + time);
-    switch('' + level + time) {
-      case 'easy':
-
+    switch(level + '-' + time) {
+      case '1-10':
+        dispatch(actions.change('workout', 'crunches'))
         break;
-      case 2:
-
+      case '1-20':
+        dispatch(actions.change('workout', 'squats'))
         break;
-      case 3:
-
+      case '1-30':
+        dispatch(actions.change('workout', 'pushups'))
+        break;
+      case '1-40':
+        this.finish()
         break;
 
-    }
-    if (time === 60) {
+      case '2-10':
+        dispatch(actions.change('workout', 'crunches'))
+        break;
+      case '2-20':
+        dispatch(actions.change('workout', 'squats'))
+        break;
+      case '2-30':
+        dispatch(actions.change('workout', 'pushups'))
+        break;
+      case '2-40':
+        this.finish()
+        break;
 
+      case '3-10':
+        dispatch(actions.change('workout', 'crunches'))
+        break;
+      case '3-20':
+        dispatch(actions.change('workout', 'squats'))
+        break;
+      case '3-30':
+        dispatch(actions.change('workout', 'pushups'))
+        break;
+      case '3-40':
+        this.finish()
+        break;
     }
   }
 
@@ -59,8 +95,12 @@ console.log('' + level + time);
           {this.props.time}
         </div>
 
+        <Crunches />
+        <Squats />
         <PushUps />
         <Plank />
+
+        <button onClick={(e) => this.finish()}>Skip to finish</button>
       </div>
 
     );

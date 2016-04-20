@@ -22,9 +22,9 @@ class Weight extends React.Component {
       <div>
         <h2>Weight</h2>
 
-        <button onClick={(e) => this.selectWeight(1)}>100</button>
-        <button onClick={(e) => this.selectWeight(2)}>150</button>
-        <button onClick={(e) => this.selectWeight(3)}>200</button>
+        <button onClick={(e) => this.selectWeight(1)}>90-140</button>
+        <button onClick={(e) => this.selectWeight(2)}>140-190</button>
+        <button onClick={(e) => this.selectWeight(3)}>190-250</button>
       </div>
 
     );
