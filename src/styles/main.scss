@@ -18,7 +18,11 @@ body, html {
   margin: 0;
   font-size: 1rem;
   background: #515866;
+  background-image: url('/src/images/landing_background.png')
+}
 
+.logo {
+    width: 90%;
 }
 
 .layout-container {
