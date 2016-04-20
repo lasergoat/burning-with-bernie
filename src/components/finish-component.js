@@ -17,7 +17,9 @@ class Finish extends React.Component {
         <section className="finished-logos">
           <img src="src/images/finished_badge_complete.png" />
         
-          <img src="src/images/tweet.png" />
+          <a href="https://twitter.com/home?status=I%20Berned%20892%20calories%20for%20Bernie!">
+            <img src="src/images/tweet.png" />
+          </a>
         </section>
       </div>
 
