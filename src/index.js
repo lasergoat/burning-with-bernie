@@ -16,6 +16,7 @@ import Finish from './components/finish-component';
 
 class App extends React.Component {
   render() {
+
     return (
       <Provider store={ store }>
 
@@ -28,7 +29,7 @@ class App extends React.Component {
           <Sex />
           <Weight />
           <Level />
-          {this.props.page === 'workout' ? <Workout /> : null}
+          <Workout />
           <Finish />
 
           <footer className="layout-footer">
