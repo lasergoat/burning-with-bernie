@@ -22,9 +22,17 @@ class Sex extends React.Component {
     return (
 
       <div>
-        <h2>Your Sex</h2>
-        <button onClick={(e) => this.selectSex(1)} >MALE</button>
-        <button onClick={(e) => this.selectSex(2)} >FEMALE</button>
+        <h2>Welcom to Feel the Bern!</h2>
+        <section class="weight-get-started">
+          <p>Let's get started.</p>
+        </section>
+        <section class="weight-male-female">
+          <p>Are you male or female?</p>
+          <img src="src/images/welcome_gender_male.png"  
+            onClick={(e) => this.selectSex(1)} />
+          <img src="src/images/welcome_gender_female.png" 
+            onClick={(e) => this.selectSex(2)} />
+        </section>
       </div>
 
     );
