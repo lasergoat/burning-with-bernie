@@ -18,7 +18,9 @@ body, html {
   margin: 0;
   font-size: 1rem;
   background: #515866;
-  background-image: url('/src/images/landing_background.png')
+  background-image: url('/src/images/landing_background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 h2 {
