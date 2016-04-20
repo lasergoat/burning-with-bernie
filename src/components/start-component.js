@@ -8,7 +8,6 @@ import { setAuth } from '../actions/auth-actions';
 class Start extends React.Component {
 
   loginCallback(auth) {
-    console.log(auth);
     this.props.dispatch(setAuth(auth))
     this.props.dispatch(page('sex'))
   }
@@ -25,11 +24,11 @@ class Start extends React.Component {
         <section className="layout-content">
           <img className="logo" src="src/images/landing_logo.png" />
         </section>
-        <section className="layout-content">
+        <section className="layout-content" className="ui-login">
           <form>
-            <input type="text" name="username" value="Username"/>
+            <input type="text" name="username" placeholder="Username"/>
             <p/>
-            <input type="password" name="password" value="Password"/>
+            <input type="password" name="password" placeholder="Password"/>
           </form>
           <div><a href="#forgot-password">Forgot Password?</a></div>
           <div className="login-buttons">
