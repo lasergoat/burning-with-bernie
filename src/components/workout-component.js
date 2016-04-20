@@ -96,7 +96,7 @@ class Workout extends React.Component {
         
         <img className="ui-time" src="src/images/workout_progress.png" />
         
-        <div className="ui-timer">
+        <div className="ui-timer"  onClick={(e) => this.finish()}>
           {this.props.time}
         </div>
 
@@ -105,7 +105,6 @@ class Workout extends React.Component {
         <PushUps />
         <Plank />
 
-        <button onClick={(e) => this.finish()}>Skip to finish</button>
       </div>
 
     );

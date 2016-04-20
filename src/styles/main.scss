@@ -46,11 +46,15 @@ h2 {
 }
 
 .ui-time {
-  width: 75%;
+  width: 50% !important;
   margin: 1rem 1rem 2rem 4rem;
 }
 .ui-workout {
   
+    img {
+        width: 95%;
+    }
+    
   h3 {
     color: white;
   }
@@ -395,4 +399,8 @@ a {
 
 .finished-logos {
     text-align: center;
+}
+
+img {
+    max-width: 100%;
 }
